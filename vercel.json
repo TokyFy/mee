@@ -1,5 +1,5 @@
 {
   "routes": [
-    { "src": "/me.txt", "dest": "/" }
+    { "src": "/me.txt", "dest": "/me.txt" }
   ]
 }
