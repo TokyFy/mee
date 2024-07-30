@@ -1,5 +1,14 @@
 {
-  "routes": [
-    { "src": "/me.txt", "dest": "/me.txt" }
-  ]
+	"redirects": [
+    {
+		"source": "/",
+		"destination": "/me.txt",
+		"permanent": true
+    }
+  	],
+  	"routes": [
+    { 
+		"src": "/me.txt",
+		"dest": "/me.txt" }
+  	]
 }
