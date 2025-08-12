@@ -8,3 +8,8 @@ set :protection, except: :host_authorization
 get '/' do
   send_file File.join(settings.public_folder, 'index.html')
 end
+
+get '/*' do
+  redirect '/'
+end
+
