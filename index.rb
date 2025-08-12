@@ -4,7 +4,8 @@ set :bind, '0.0.0.0'
 set :port, 8080
 
 use Rack::Protection::HostAuthorization, permitted_hosts: [
-  'ngnix'
+  'localhost:8080',       # direct test on host
+  'meine:8080'          # container name in Docker network
 ]
 
 get '/' do
